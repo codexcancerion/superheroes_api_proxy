@@ -3,7 +3,7 @@
 import axios from 'axios';
 import { NextRequest } from 'next/server';
 
-export async function POST(req: NextRequest): Promise<Response> {
+export async function GET(req: NextRequest): Promise<Response> {
   const { searchParams } = new URL(req.url);
   const token = searchParams.get('token');
 
